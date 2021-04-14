@@ -16,8 +16,446 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
-<body>
-    
+<body data-spy="scroll" data-target="#home" data-offset="0">
+    <header>
+        <nav id="#home" class="navbar navbar-expand-md px-3">
+            <a class="navbar-brand d-lg-inline d-none" href="index.html">
+                <img src="/assets/images/logo/favicon.png" alt="Backe Construction AS logo" height="60" />
+            </a>
+            <a class="navbar-brand d-inline-block d-lg-none" href="index.html">
+                <img src="/assets/images/logo/logo.png" alt="Backe Construction AS logo" height="60" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-work">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-us" class="nav-link d-inline-block d-md-none">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-us" class="btn btn-md btn-primary d-none d-md-inline-block"
+                            role="button">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about-us">
+            <!-- jumbotron-->
+            <div class="jumbotron jumbotron-fluid container-fluid text-center">
+                <div class="container align-items-center">
+                    <img src="assets/images/logo/logo.png" class="d-none d-lg-block mx-auto mb-2" width="300px">
+                    <h1 class="display-5 font-weight-bold mb-3 mb-lg-5">No job is too small,<br>only too big</h1>
+                    <p class="lead font-italic">Everything from maintenance, renovation, to construction.<br>We got it
+                        all.
+                    </p>
+                    <a href="#contact-us" class="btn btn-lg btn-primary" role="button">Contact</a>
+                </div>
+            </div>
+            <!-- /jumbotron -->
+            <!-- about us -->
+            <article class="container my-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <p>Established in 2016, Backe Construction AS has grown and completed many different exciting,
+                            large
+                            and small projects. We have a high focus on developing optimal solutions for construction in
+                            terms of economy, aesthetics, and quality.</p>
+                    </div>
+                    <img src="/assets/images/home/0-house-construction.jpg" class="d-none d-md-block col-md-6"
+                        alt="A residential house built by Backe Construction AS"></img>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 order-md-2">
+                        <p>Regions we primarily serve:</p>
+                        <ul>
+                            <li>Oslo</li>
+                            <li>Viken (Buskerud and Akershus)</li>
+                        </ul>
+                    </div>
+                    <img class="col-12 col-md-6 order-md-1" src="assets/images/home/oslo-viken-map.jpg"
+                        alt="map of Oslo and Viken regions">
+                </div>
+            </article>
+            <!-- / about us -->
+        </section>
+
+        <!-- Our services -->
+        <section id="our-services">
+            <div class="container-fluid text-center my-5">
+                <div class="row mb-3">
+                    <h2 class="col">Our Services</h2>
+                </div>
+                <div class="row no-gutters">
+                    <article class="col-12 col-md-6 col-lg-3 card border-0 rounded-0">
+                        <img src="assets/images/home/service1.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Byggservice</h3>
+                            <p class="card-text">Backe Byggservice har lang erfaring fra enkle oppussingsprosjekter til
+                                totalrenovering</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 card border-0 rounded-0">
+                        <img src="assets/images/home/kjerneboring-home.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Kjerneboring</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus,
+                                luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 card border-0 rounded-0">
+                        <img src="assets/images/home/stubbefresing-home.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Stubbefresing</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus,
+                                luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 card border-0 rounded-0">
+                        <img src="assets/images/home/other-services.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Other Services</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus,
+                                luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+                            <a href="#contact-us" class="btn btn-md btn-primary" role="button">Contact</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- / our services -->
+
+        <!-- Our work -->
+        <section id="our-work">
+            <div class="container-fluid text-center my-5">
+                <div class="row mb-3">
+                    <h2 class="col">Our Work</h2>
+                </div>
+
+                <!-- Work gallery -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <img src="/assets/images/gallery/1-uproot.jpg" alt="uprooting work" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Uprooting work</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <img src="/assets/images/gallery/2-flooring.jpg" alt="flooring work" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Laminted wood floor</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <div id="galleryCarousel1" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/gallery/3-floor-before.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/3-floor-after.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#galleryCarousel1" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#galleryCarousel1" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Wooden floor before/after</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <div id="galleryCarousel2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/gallery/4-kjerneboring-before.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/4-kjerneboring-after.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#galleryCarousel2" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#galleryCarousel2" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Kjerneboring before/after</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <div id="galleryCarousel3" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/gallery/5-wall-before.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/5-wall-after.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#galleryCarousel3" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#galleryCarousel3" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Wall before/after</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <img src="/assets/images/gallery/6-roof-new.jpg" alt="flooring work" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Building new roof</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <div id="galleryCarousel4" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/gallery/7-roof-before.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/7-roof-after.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#galleryCarousel4" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#galleryCarousel4" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Roof clearning before/after</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <div id="galleryCarousel5" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/gallery/8-outdoor-steps1.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/8-outdoor-steps2.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/8-outdoor-steps3.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/8-others3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#galleryCarousel5" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#galleryCarousel5" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Outdoor steps/stairs/platting</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col mb-3">
+                        <div class="card h-100">
+                            <div id="galleryCarousel6" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/gallery/9-centralVacuum1.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/gallery/9-centralVacuum2.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#galleryCarousel6" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#galleryCarousel6" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Industrial central vaccuum system</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- / work gallery -->
+            </div>
+        </section>
+        <!-- / our work-->
+
+        <!-- Contact us -->
+        <section id="contact-us" class="bg-secondary">
+            <div class="container-fluid justify-content-center text-center py-5">
+                <div class="row mb-3">
+                    <h2 class="col-10 offset-1 offset-lg-1 col-lg-6">Contact Us</h2>
+                    <h2 class="col-lg-4 d-none d-lg-block">Contact Info</h2>
+                </div>
+
+                <div class="row">
+                    <form method="GET" action="" class="col-10 offset-1 offset-lg-1 col-lg-6">
+                        <input class="form-control mb-2" type="text" name="fullName" id="name" aria-label="Full name"
+                            placeholder="Name &#42;" required>
+                        <input class="form-control mb-2" type="text" name="phone" id="phone" aria-label="Phone number"
+                            placeholder="Phone &#42;" required>
+                        <input class="form-control mb-2" type="email" name="email" id="email" aria-label="Email address"
+                            placeholder="Email &#42;" required>
+                        <textarea class="form-control" rows="5" placeholder="Message &#42;" required></textarea>
+                    </form>
+
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <p class="font-weight-bold">Backe Construction AS<br>NO 818 129 882 MVA</p>
+                        <p><u>Phone:</u> 90794720</p>
+                        <p><u>Email:</u> baard.backe@outlook.com</p>
+                        <p><u>Address:</u> Holmenlia 5, 3410 Sylling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-background">
+        <div class="container-fluid py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-3 d-none d-md-block">
+                    <img src="assets/images/logo/logo.png" alt="Backe Construction AS logo" width="100%">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="footer-heading">Backe Construction AS</p>
+                    <div class="d-block">
+                        <i class="far fa-address-card d-none d-md-inline" aria-hidden="true"></i>
+                        <span class="d-inline">Organisation number: 818 129 882</span>
+                    </div>
+                    <div class="d-block my-1">
+                        <i class="fas fa-phone-alt d-none d-md-inline" aria-hidden="true"></i>
+                        <span class="d-inline">Phone: 90794720</span>
+                    </div>
+                    <div class="d-block">
+                        <i class="fas fa-envelope d-none d-md-inline" aria-hidden="true"></i>
+                        <span class="d-inline">Email: baard.backe@outlook.com</span>
+                    </div>
+                    <div class="d-block my-1">
+                        <i class="fas fa-map-marker-alt d-none d-md-inline" aria-hidden="true"></i>
+                        <span class="d-inline">Address: Holmenlia 5, 3410 Sylling</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p class="footer-heading">Menu</p>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="#about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#our-services">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="#our-work">Our Work</a>
+                        </li>
+                        <li>
+                            <a href="#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+/* colors, headings */
+.btn-primary {
+    background-color: #0089d0;
+    border-color: #0089d0;
+}
+h2, h3 {
+    color: #0089d0;
+}
+
+/* navbar */
+.navbar {
+    background-color: #ffe116;
+}
+.navbar-toggler i {
+    color: #0089D0;
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+    color: #0089D0;
+    font-weight: 600;
+}
