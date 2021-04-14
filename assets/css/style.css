@@ -1,9 +1,37 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    position: relative;
 }
-
+/* jumbotron */
+#about-us .jumbotron {
+    margin-top: 86px;
+    background: url('../images/home/jumbotron-bg.jpg') top center / cover no-repeat;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+#about-us .jumbotron:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(at center center, #FDE28B 0%, #181818 100%);
+    opacity: 0.6;
+}
+#about-us .container {
+    z-index: 1;
+}
+@media (max-width: 576px) {
+    #about-us h1 {
+        font-size: 1.5rem;
+    }
+    #about-us .lead {
+        font-size: 1rem;
+    }
+}
 /* colors, headings */
 .btn-primary {
     background-color: #0089d0;
