@@ -45,7 +45,7 @@
                         <a href="#contact-us" class="nav-link d-inline-block d-md-none" role="button">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact-us" class="btn btn-md btn-primary d-none d-md-inline-block"
+                        <a href="#contact-us" class="btn navbar-btn d-none d-md-inline-block"
                             role="button">Contact</a>
                     </li>
                 </ul>
@@ -62,7 +62,7 @@
                     <p class="lead font-italic">Everything from maintenance, renovation, to construction.<br>We got it
                         all.
                     </p>
-                    <a href="#contact-us" class="btn btn-lg btn-primary" role="button">Contact</a>
+                    <a href="#contact-us" class="btn btn-primary" role="button">Contact</a>
                 </div>
             </div>
             <!-- /jumbotron -->
@@ -148,7 +148,7 @@
                                 <p class="text-white">We are happy to take on a lot of different work. Just give us a
                                     call or
                                     email us for a free consultation.</p>
-                                <a href="#contact-us" class="btn btn-md btn-primary" role="button">Contact</a>
+                                <a href="#contact-us" class="btn btn-primary" role="button">Contact</a>
                             </div>
                         </div>
                     </article>
@@ -391,74 +391,78 @@
         <!-- / our work-->
 
         <!-- Contact us -->
-        <section id="contact-us" class="bg-secondary">
-            <div class="container-fluid justify-content-center text-center py-5">
-                <div class="row mb-3">
-                    <h2 class="col-10 offset-1 offset-lg-1 col-lg-6">Contact Us</h2>
-                    <h2 class="col-lg-4 d-none d-lg-block">Contact Info</h2>
-                </div>
-
+        <section id="contact-us" class="contact-us-wrapper">
+            <div class="container">
                 <div class="row">
-                    <form method="GET" action="" class="col-10 offset-1 offset-lg-1 col-lg-6">
-                        <input class="form-control mb-2" type="text" name="fullName" id="name" aria-label="Full name"
-                            placeholder="Name &#42;" required>
-                        <input class="form-control mb-2" type="text" name="phone" id="phone" aria-label="Phone number"
-                            placeholder="Phone &#42;" required>
-                        <input class="form-control mb-2" type="email" name="email" id="email" aria-label="Email address"
-                            placeholder="Email &#42;" required>
-                        <textarea class="form-control" rows="5" placeholder="Message &#42;" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <p class="font-weight-bold">Backe Construction AS<br>NO 818 129 882 MVA</p>
-                        <p><u>Phone:</u> 90794720</p>
-                        <p><u>Email:</u> baard.backe@outlook.com</p>
-                        <p><u>Address:</u> Holmenlia 5, 3410 Sylling</p>
+                    <div class="col-12 col-lg-7 text-center">
+                        <h3 class="mb-3">Contact Us</h3>
+                        <form method="GET" action="">
+                            <input class="form-control mb-2" type="text" name="fullName" id="name"
+                                aria-label="Full name" placeholder="Name &#42;" required>
+                            <input class="form-control mb-2" type="text" name="phone" id="phone"
+                                aria-label="Phone number" placeholder="Phone &#42;" required>
+                            <input class="form-control mb-2" type="email" name="email" id="email"
+                                aria-label="Email address" placeholder="Email &#42;" required>
+                            <textarea class="form-control" rows="5" placeholder="Message &#42;" required></textarea>
+                            <button type="submit" class="btn btn-primary mt-3">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
+                        <h3 class="mb-3">Contact Info</h3>
+                        <div class="text-white">
+                            <p class="font-weight-bold">Backe Construction AS<br>NO 818 129 882 MVA</p>
+                            <p><u>Managing Director:</u> Bård Backe</p>
+                            <p><u>Phone:</u> 90794720</p>
+                            <p><u>Email:</u> baard.backe@outlook.com</p>
+                            <p><u>Address:</u> Holmenlia 5, 3410 Sylling</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer-background">
-        <div class="container-fluid py-5">
-            <div class="row justify-content-center text-center">
-                <div class="col-12 col-md-3 d-none d-md-block">
+    <footer class="footer-wrapper">
+        <div class="container-fluid py-4">
+            <div class="row text-center">
+                <div class="col-12 col-md-3 d-none d-md-block align-self-center">
                     <img src="assets/images/logo/logo.png" alt="Backe Construction AS logo" width="100%">
                 </div>
                 <div class="col-12 col-md-6">
-                    <p class="footer-heading">Backe Construction AS</p>
-                    <div class="d-block">
-                        <i class="far fa-address-card d-none d-md-inline" aria-hidden="true"></i>
-                        <span class="d-inline">Organisation number: 818 129 882</span>
+                    <p class="footer-heading">Backe Construction AS<br>NO 818 129 882 MVA</p>
+                    <div class="footer-info">
+                        <div class="d-block">
+                            <i class="far fa-address-card d-none d-md-inline" aria-hidden="true"></i>
+                            <span class="d-inline"><u>Managing Director</u>: Bård Backe</span>
+                        </div>
+                        <div class="d-block my-2">
+                            <i class="fas fa-phone-alt d-none d-md-inline" aria-hidden="true"></i>
+                            <span class="d-inline"><u>Phone:</u> 90794720</span>
+                        </div>
+                        <div class="d-block">
+                            <i class="fas fa-envelope d-none d-md-inline" aria-hidden="true"></i>
+                            <span class="d-inline"><u>Email:</u> baard.backe@outlook.com</span>
+                        </div>
+                        <div class="d-block mt-2">
+                            <i class="fas fa-map-marker-alt d-none d-md-inline" aria-hidden="true"></i>
+                            <span class="d-inline"><u>Address:</u> Holmenlia 5, 3410 Sylling</span>
+                        </div>
                     </div>
-                    <div class="d-block my-1">
-                        <i class="fas fa-phone-alt d-none d-md-inline" aria-hidden="true"></i>
-                        <span class="d-inline">Phone: 90794720</span>
-                    </div>
-                    <div class="d-block">
-                        <i class="fas fa-envelope d-none d-md-inline" aria-hidden="true"></i>
-                        <span class="d-inline">Email: baard.backe@outlook.com</span>
-                    </div>
-                    <div class="d-block my-1">
-                        <i class="fas fa-map-marker-alt d-none d-md-inline" aria-hidden="true"></i>
-                        <span class="d-inline">Address: Holmenlia 5, 3410 Sylling</span>
-                    </div>
+
                 </div>
                 <div class="col-12 col-md-3">
-                    <p class="footer-heading">Menu</p>
-                    <ul class="footer-menu">
-                        <li>
+                    <p class="footer-heading"><br>Menu</p>
+                    <ul class="footer-menu list-unstyled">
+                        <li class="">
                             <a href="#about-us">About Us</a>
                         </li>
-                        <li>
+                        <li class="my-2">
                             <a href="#our-services">Our Services</a>
                         </li>
-                        <li>
+                        <li class="">
                             <a href="#our-work">Our Work</a>
                         </li>
-                        <li>
+                        <li class="mt-2">
                             <a href="#contact-us">Contact Us</a>
                         </li>
                     </ul>

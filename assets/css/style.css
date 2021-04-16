@@ -32,10 +32,20 @@ body {
         font-size: 1rem;
     }
 }
-/* colors, headings */
-.btn-primary {
+/* colors, headings, buttons */
+.btn-primary, .navbar-btn {
     background-color: #0089d0;
     border-color: #0089d0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    padding: 15px 30px;
+}
+.btn-primary:hover {
+    background-color: #ffe116;
+    border-color: #ffe116;
+    color: #0089D0;
 }
 h2 {
     color: #0089d0;
@@ -93,4 +103,42 @@ h3 {
 }
 .service-card.service-card-4 {
     background: url('../images/home/other-services.jpg') center center / cover no-repeat;
+}
+
+/* Contact us */
+.contact-us-wrapper {
+    background: url('../images/home/contactus-bg.jpg') center center / cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-us-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(1, 86, 131, 0.6);
+}
+
+/* footer */
+.footer-wrapper {
+    background-color: #ffe116;
+    color: #625F5F;
+}
+.footer-heading, footer i {
+    color: #0089D0;
+    font-weight: 600;
+}
+.footer-menu a {
+    color: #625F5F;
+}
+.footer-menu a:hover {
+    color: #0089D0;
+    text-decoration: none;
 }
