@@ -37,8 +37,13 @@ body {
     background-color: #0089d0;
     border-color: #0089d0;
 }
-h2, h3 {
+h2 {
     color: #0089d0;
+    font-weight: 600;
+}
+h3 {
+    color: #ffe116;
+    font-weight: 600;
 }
 
 /* navbar */
@@ -52,4 +57,40 @@ h2, h3 {
 .navbar-nav .nav-link {
     color: #0089D0;
     font-weight: 600;
+}
+
+/* Our service cards */
+.service-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 1.5rem 1rem 3rem 1rem;
+    z-index: -1;
+}
+.service-card-description::before {
+    background-color: rgba(81, 100, 110, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+}
+.service-card-description {
+    z-index: 1;
+}
+
+.service-card.service-card-1 {
+    background: url('../images/home/service1.jpg') center center / cover no-repeat;
+}
+.service-card.service-card-2 {
+    background: url('../images/home/kjerneboring-home.jpg') center center / cover no-repeat;
+}
+.service-card.service-card-3 {
+    background: url('../images/home/stubbefresing-home.jpg') center center / cover no-repeat;
+}
+.service-card.service-card-4 {
+    background: url('../images/home/other-services.jpg') center center / cover no-repeat;
 }
