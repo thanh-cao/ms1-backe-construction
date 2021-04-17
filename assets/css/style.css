@@ -1,6 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    overflow-x: hidden;
 }
 /* jumbotron */
 #about-us .jumbotron {
@@ -88,9 +89,9 @@ h3 {
     height: 100%;
     text-align: center;
     padding: 1.5rem 1rem 3rem 1rem;
-    z-index: -1;
+    z-index: 1;
 }
-.service-card-description::before {
+.service-card::before {
     background-color: rgba(81, 100, 110, 0.7);
     position: absolute;
     top: 0;
@@ -100,9 +101,9 @@ h3 {
     content: "";
     z-index: -1;
 }
-.service-card-description {
+/* .service-card-description {
     z-index: 1;
-}
+} */
 
 .service-card.service-card-1 {
     background: url('../images/home/service1.jpg') center center / cover no-repeat;
