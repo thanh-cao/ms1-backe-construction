@@ -3,9 +3,43 @@ body {
     font-weight: 300;
     overflow-x: hidden;
 }
+
+/* colors, headings, buttons, spacing */
+.btn-primary, .navbar-btn {
+    background-color: #0089d0;
+    border-color: #0089d0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    padding: 15px 30px;
+}
+.btn-primary:hover {
+    background-color: #ffe116;
+    border-color: #ffe116;
+    color: #0089D0;
+}
+.navbar-btn:hover {
+    transform: scale(1.05);
+    color: white;
+}
+h2 {
+    color: #0089d0;
+    font-weight: 600;
+}
+h3 {
+    color: #ffe116;
+    font-weight: 600;
+}
+section {
+    padding-top: 5rem;
+}
+.ratio {
+    aspect-ratio: 4/3;
+}
+
 /* jumbotron */
 #about-us .jumbotron {
-    margin-top: 86px;
     background: url('../images/home/jumbotron-bg.jpg') center center / cover no-repeat;
     position: relative;
     height: 70vh;
@@ -36,33 +70,6 @@ body {
         background: url('../images/home/jumbotron-bg--portrait.jpg') center center / cover no-repeat;
     }
 }
-/* colors, headings, buttons */
-.btn-primary, .navbar-btn {
-    background-color: #0089d0;
-    border-color: #0089d0;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.7rem;
-    padding: 15px 30px;
-}
-.btn-primary:hover {
-    background-color: #ffe116;
-    border-color: #ffe116;
-    color: #0089D0;
-}
-.navbar-btn:hover {
-    transform: scale(1.05);
-    color: white;
-}
-h2 {
-    color: #0089d0;
-    font-weight: 600;
-}
-h3 {
-    color: #ffe116;
-    font-weight: 600;
-}
 
 /* navbar */
 .navbar {
@@ -82,6 +89,7 @@ h3 {
 .nav-link.active {
     border-bottom: 1px solid #0089D0;
 }
+
 /* Our service cards */
 .service-card {
     position: relative;
@@ -101,9 +109,6 @@ h3 {
     content: "";
     z-index: -1;
 }
-/* .service-card-description {
-    z-index: 1;
-} */
 
 .service-card.service-card-1 {
     background: url('../images/home/service1.jpg') center center / cover no-repeat;
@@ -128,7 +133,6 @@ h3 {
     display: flex;
     align-items: center;
 }
-
 .contact-us-wrapper:before {
     content: "";
     position: absolute;
