@@ -13,11 +13,12 @@ The idea of the project is to build a static front-end site for Backe Constructi
 
 ## User Experience (UX)
 ### User Stories
-1. As a first time visitor, I want to easily navigate through the website to find out the information I need.
-2. As a first time visitor, I want to learn more about what kind of services the company offers.
-3. As a first time visitor, I want to see previous work they have done, so that I can estimate their competencies.
-4. As a first time visitor, I want to quickly send a message, so that I can ask further questions or to get a quote from the company.
-5. As a returning visitor, I want to quickly find contact information of the company.
+1. As a first time visitor, I want to understand what the website is about and the purpose of it.
+2. As a first time visitor, I want to easily navigate through the website to find out the information I need.
+3. As a first time visitor, I want to learn more about what kind of services the company offers.
+4. As a first time visitor, I want to see previous work they have done, so that I can estimate their competencies.
+5. As a first time visitor, I want to quickly send a message, so that I can ask further questions or to get a quote from the company.
+6. As a returning visitor, I want to quickly find contact information of the company.
 
 ### Strategy
 The company's goal of the website is to present the company and attract customers.
@@ -114,24 +115,35 @@ During development, Chrome DevTools was used intensively for debugging and adjus
 In order to make sure there were no syntax errors found in the project, [W3C Markup Validator](https://validator.w3.org/nu/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) services were utilized to validate the page.
 
 I also used Chrome DevTools' Lighthouse to evaluate the overall performance of the website with the results as in below:
+
 ![Lighthouse evaluation](assets/readme/lighthouse-test.png)
 
 
 ### User Story Testing
-1. As a first time visitor, I want to easily navigate through the website to find out the information I need.
-* The 
+1. As a first time visitor, I want to understand what the website is about and the purpose of it.
+* When users enter the website, they will see right away the logo of the company "Backe Constructions AS" which gives a hint as to what this company does.
+* The theme and purpose of the website is made clearly within the call out section. Hero image has tools on wooden table which gives out the theme of the site. The company's motto then gives more information what the company does and the ability to contact them if any questions. 
 
-2. As a first time visitor, I want to learn more about what kind of services the company offers.
+2. As a first time visitor, I want to easily navigate through the website to find out the information I need.
+* The site is built as a simple page application with content clearly separated by headings and/or visuals.
+* At the top of the page is a fixed intuitive navigation bar that informs users what information they can find and click to the desired section. Each link of the navigation has an indicator as users scroll down the site to let them know where they are.
+* Navigation links appear again at the bottom of the page so that users can go back quickly to previous sections without feeling trapped at the end.
 
+3. As a first time visitor, I want to learn more about what kind of services the company offers.
+* The different services are clearly presented with a bold heading and a short text describing it. Furthermore, each service has its own background image relevant to the topic in order to reinforce the message.
+* Since the company is capable of doing more than what they can summarize, there is a button in this section which allows users to contact the company for further information.
 
-3. As a first time visitor, I want to see previous work they have done, so that I can estimate their competencies.
+4. As a first time visitor, I want to see previous work they have done, so that I can estimate their competencies.
+* The company's experience is displayed as a gallery with descriptions for the different types of work.
+* Carousels are used in order to show before and after of some projects.
 
+5. As a first time visitor, I want to quickly send a message, so that I can ask further questions or to get a quote from the company.
+* Upon entering the site, users can see right away Contact button at the navigation bar that stands out from other links.
+* Users are then directed to a simple contact which allows them to send their contact details as well as what it is they wonder about. 
 
-4. As a first time visitor, I want to quickly send a message, so that I can ask further questions or to get a quote from the company.
-
-
-5. As a returning visitor, I want to quickly find contact information of the company.
-
+6. As a returning visitor, I want to quickly find contact information of the company.
+* The navigation bar has a visible contact button which quickly directs users to Contact Us section.
+* Contact buttons are placed throughout the website so that returning users can easily find contact form and/or contact information.
 
 ### Known Bugs
 * The work gallery has some carousels which include images that are in portrait mode, which breaks the layout of the section when users scroll to those images. 
@@ -173,4 +185,5 @@ Photos being used to showcase company's previous work under "Our Work" section w
 Other photos being used as background elements were obtained from [Unsplash](https://unsplash.com/).
 
 ### Acknowledgements
-Shout out to my peer Marina Pavlovic from Code Institute for helping me fix a bug on the Contact button under "Our Services" section.
+* Thanks to my mentor Narender Singh and the amazing Code Institute's Slack community for reviewing, giving feedback, mental support.
+* Shout out to my peer Marina Pavlovic from Code Institute for helping me fix a bug on the Contact button under "Our Services" section which my tired eyes failed to catch after an overnighter.
