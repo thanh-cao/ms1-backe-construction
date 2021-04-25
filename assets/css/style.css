@@ -41,6 +41,7 @@ section {
 /* jumbotron */
 #about-us .jumbotron {
     background: url('../images/home/jumbotron-bg.jpg') center center / cover no-repeat;
+    background-attachment: fixed;
     position: relative;
     height: 70vh;
     display: flex;
