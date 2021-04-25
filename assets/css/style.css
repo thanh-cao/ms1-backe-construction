@@ -160,3 +160,30 @@ section {
     color: #0089D0;
     text-decoration: none;
 }
+.footer-info {
+    width: 100%;
+}
+.item-key {
+    width: 30%;
+    display: inline-block;
+    font-weight: 600;
+    vertical-align: top;
+    padding-right: 12px;
+    text-align: right;
+}
+.item-value {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+}
+@media (min-width: 992px), (max-width: 768px) and (orientation: landscape) {
+    .footer-info {
+        width: 75%;
+    }
+    .item-key {
+        width: 40%;
+    }
+    .item-value {
+        width: 50%;
+    }
+}
