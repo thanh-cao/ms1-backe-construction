@@ -112,9 +112,19 @@ Contact form allows user to send a message to the site's owner. A popup message 
 During development, Chrome DevTools was used intensively for debugging and adjusting codes on multiple devices. On top of that, the website was viewed on different browsers (Google Chrome, Firefox, Safari, Internet Explorer) and physical devices (13-inch desktop screen, 27-inch screen, iPhone X, Samsung Galaxy S9 and S21+, iPad) to see if things work properly. Thanks to this practice I found out a small overflow issue which I hadn't caught using DevTool.
 
 ### Validators and tools
-In order to make sure there were no syntax errors found in the project, [W3C Markup Validator](https://validator.w3.org/nu/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) services were utilized to validate the page.
+#### W3C validators
+In order to make sure there were no syntax errors found in the project, [W3C Markup Validator](https://validator.w3.org/nu/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) services were utilized to validate the page:
+* When validate the project's markup, the result came out with a warning (as seen in image below) on my use of `<article>` tag without any headings at the "Our Work" section for the image gallery. After reading more about the semantic use of `<article>` tag, I then changed all these tags to `<div>` since this is more appropirate.
+  ![W3C Markup Validator warning](assets/readme/htmlvalidator-warning.png)
 
-I also used Chrome DevTools' Lighthouse to evaluate the overall performance of the website with the results as in below:
+* Validating my CSS custom codes through W3C validator came out with 1 error. When working with the gallery at the Our Work section, there are a few images that don't match with the desired aspect ratio. So I used a CSS property `aspect-ratio`, something I had come across a while ago from an article, to adjust those images. However, that property came out as not existing through the Jigsaw validator and I learned from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio) that the property is a new thing and isn't compatible with all the browsers. Then I found and adapted a solution to fix this from [a pqina's blog post](https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/).
+  ![W3C CSS Validator error](assets/readme/cssvalidator-error.png)
+
+* W3C CSS validation also came out with a warning that the button has the same background and border color. I decided not to act on this warning as I would like to keep the 2 properties for future changes in case there are changes in the company's color scheme.
+  ![W3C CSS Validator warning](assets/readme/cssvalidator-warning.png)
+
+#### Lighthouse evaluation
+I also used Chrome DevTools' Lighthouse to evaluate the overall performance of the website several times during development. This tool gave me suggestions to compress image files, provide alt text to images, etc. After all the optimizations based on the suggestions, the website ends up with the results as in below:
 
 ![Lighthouse evaluation](assets/readme/lighthouse-test.png)
 
@@ -144,6 +154,12 @@ I also used Chrome DevTools' Lighthouse to evaluate the overall performance of t
 6. As a returning visitor, I want to quickly find contact information of the company.
 * The navigation bar has a visible contact button which quickly directs users to Contact Us section.
 * Contact buttons are placed throughout the website so that returning users can easily find contact form and/or contact information.
+
+### Further testing
+A large amount of testing was done to ensure functionalities of the website.
+* Navigation bar: all the links direct to its respective sections; indicators and scroll spy work as it should; navigation bar collapses at breakpoint and hamburger menu works properly.
+* Contact form: form cannot be submit without filling out the required fields; validation for email field; after all inputs are filled and valid, a success message appears at submission.
+* Responsive website: thorough reviewing the website on different devices using DevTool's to make everything works as it should be, also with landscape orientation on mobile.
 
 ### Known Bugs
 * The work gallery has some carousels which include images that are in portrait mode, which breaks the layout of the section when users scroll to those images. 
