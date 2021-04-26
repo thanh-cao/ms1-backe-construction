@@ -7,7 +7,7 @@ body {
 /* colors, headings, buttons, spacing */
 .btn-primary, .navbar-btn {
     background-color: #0089d0;
-    border-color: #0089d0;
+    border-color: transparent;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -16,7 +16,7 @@ body {
 }
 .btn-primary:hover {
     background-color: #ffe116;
-    border-color: #ffe116;
+    border-color: transparent;
     color: #0089D0;
 }
 .navbar-btn:hover {
