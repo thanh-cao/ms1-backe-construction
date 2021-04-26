@@ -46,14 +46,19 @@ The site includes a header for navigation bar and footer which has company's con
 ### Skeleton
 #### Design
 * Color scheme:
-  * The website’s color scheme is based on the company’s current business card with primary color is blue (hex #0089D0) same as the logo and secondary color is yellow (hex #FFE161).
+  * The website’s color scheme is based on the company’s current business card with primary color is blue same as the logo and secondary color is yellow. Due to the lack of digital version of the business card, I had to recreate the logo and the color scheme that best matches the card with the best possible color constrast.
+  ![Color scheme](assets/readme/color-scheme.png)
 * Typography:
   * The main font being used throughout the website is Montserrat and the fallback font is Sans Serif in case of failure loading the main font.
 * Imagery:
   * The company provides a folder of all images they have. Due to low quality and resolution, those images can only be used for showcasing their work. For other visual elements, stock images are chosen.
 
 #### Wireframes
-Wireframes for mobile, tablet, and desktop were created using Figma - [View](https://www.figma.com/file/RO34b9AdfwEk65d08dkByw/MS1-Backe-Construction).
+Wireframes for mobile, tablet, and desktop were created using Figma.
+* Wireframe for mobile - [View](assets/wireframes/wireframe-mobile.png)
+* Wireframe for tablet - [View](assets/wireframes/wireframe-tablet.png)
+* Wireframe for desktop - [View](assets/wireframes/wireframe-desktop.png)
+
 
 #### Design changes
 1. *Our work section:* in the wireframe, the work gallery in large screen was supposed to be a 3-column grid. However, after cosolidating all the photos provided by the company, I decided to go with 4 columns in order to better present 8 different works.
@@ -120,7 +125,7 @@ In order to make sure there were no syntax errors found in the project, [W3C Mar
 * Validating my CSS custom codes through W3C validator came out with 1 error. When working with the gallery at the Our Work section, there are a few images that don't match with the desired aspect ratio. So I used a CSS property `aspect-ratio`, something I had come across a while ago from an article, to adjust those images. However, that property came out as not existing through the Jigsaw validator and I learned from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio) that the property is a new thing and isn't compatible with all the browsers. Then I found and adapted a solution to fix this from [a pqina's blog post](https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/).
   ![W3C CSS Validator error](assets/readme/cssvalidator-error.png)
 
-* W3C CSS validation also came out with a warning that the button has the same background and border color. I decided not to act on this warning as I would like to keep the 2 properties for future changes in case there are changes in the company's color scheme.
+* W3C CSS validation also came out with a warning that the button has the same background and border color. Since I'm using Bootstrap, I decided to change the `border-color` to `transparent` to override Bootstrap's style.
   ![W3C CSS Validator warning](assets/readme/cssvalidator-warning.png)
 
 #### Lighthouse evaluation
@@ -159,6 +164,7 @@ I also used Chrome DevTools' Lighthouse to evaluate the overall performance of t
 A large amount of testing was done to ensure functionalities of the website.
 * Navigation bar: all the links direct to its respective sections; indicators and scroll spy work as it should; navigation bar collapses at breakpoint and hamburger menu works properly.
 * Contact form: form cannot be submit without filling out the required fields; validation for email field; after all inputs are filled and valid, a success message appears at submission.
+* Carousel: left and right arrows are clickable and images to slided back and forth as intended.
 * Responsive website: thorough reviewing the website on different devices using DevTool's to make everything works as it should be, also with landscape orientation on mobile.
 
 ### Known Bugs
@@ -187,11 +193,16 @@ Follow these steps to clone this project:
  5. If needed, change the current workspace to the location where you want the repository to be cloned
  6. Type `git clone` and paste in the URL copied in step 3 and press Enter
 
+### Forking the repository
+1. Log in to GitHub and navigate to this project's respository: [ms1-backe-construction](https://github.com/thanh-cao/ms1-backe-construction)
+2. Just above the navigation menu of the repository (above the Settings button), locate the Fork button
+3. The original copy of the repository is now copied on your GitHub account which allows you to view and/or work on the codes without affecting the original work
+   
 ## Credits
 ### Code
 * Script to close collasped navigation bar after click came from this [StackOverflow thread](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-navbar-on-click)
-
 * Script to open modal only after a form is submitted was adapted from this [StackOverflow thread](https://stackoverflow.com/questions/46054499/open-modal-bootstrap-on-submit-form)
+* CSS trick to force image scale with its parent containers to a desired aspect ratio was adapted from this [pqina's blog post](https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/)
   
 ### Content
 The content was provided by the company Backe Byggservice AS in Norwegian as the target audience of the website is Norwegian. For the purpose of this milestone project, the texts were translated and adapted into English.
